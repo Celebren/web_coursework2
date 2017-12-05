@@ -1,0 +1,256 @@
+body {
+    background-image: url("images/pexels-photo-122458.jpeg");
+    margin:0;
+    padding:0;
+    font-family: "Arial", "Arial Black", sans-serif;    
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 1. CSS for the title banner (Company name and a background image)*/
+.title {
+    padding: 50px 10px 50px 110px;    
+    background-image: url("images/vegetables-italian-pizza-restaurant.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100px;
+    font-size: 20px; 
+}
+    /* -webkit-text-stroke adds stroke around the text */
+    /* Not compatible with Internet Explorer*/
+a.titleEffect {
+    color: #B3FF00;
+    -webkit-text-stroke: 1px black;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 2. CSS for the menu bar (pizzas, sides, desserts, drinks, sign-in/register and cart)*/
+.menu {
+    background-color: #DB1616;
+    padding-top: 10px;    
+}
+    /* Remove list' bullets  */
+div.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 10px 10%;
+    background: green;
+    border-bottom: 10px solid #DB1616;
+    height: 22px;
+    
+}
+    /* make list elements appear next to eachother */
+div.menu ul li {
+    padding: 0px 10px 0px 10px;
+    border: 0px solid black;
+    
+}
+    /* remove links decorations*/
+.nodecor {
+    text-decoration: none;
+    
+}
+    /* make first list items float left */
+.menuLinks {
+    float: left;
+    height:22px;
+    padding: 5px 10px 0px 10px;
+    color: #FFFFFF;
+}
+    /* make last list items float right */
+.menuLinks2 {
+    float: right;
+    height: 22px;
+    padding: 5px 10px 0px 0px;
+    color: #FFFFFF;
+}
+    /* change appearance of list items on mouse over */
+div.menu ul li a:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    
+}
+    /* yellow background for the cart list item */
+.special {
+    float:right;
+    background-color:#E7EB22;
+    color:#000000;
+    height: 22px;
+    padding: 5px 10px 0px 10px;
+       
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 3. CSS for the main body of the page */
+.main {
+    background-color: #DDCF9F;
+    margin: 0px 15px 0px 15px; 
+    padding: 2% 5% 10% 5%;
+      
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 3.1. CSS for the store's main page */
+.frame {
+    padding-top: 40px;
+}
+
+.ovenPic {    
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.storeDescription{
+    float: right;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.black {
+    color: #000000;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 4. CSS for the page footer */
+.bottom {
+    background-color: #353535;    
+    color: #FFFFFF;
+    position: absolute;
+    padding-bottom:2%;
+    width: 100%;
+}
+
+address {
+    float: right;
+    margin-bottom: 0;
+    padding: 1% 10% 1% 0%;
+    font-size: 13px
+}
+    
+.copyright {    
+    position: absolute;
+    bottom: 20%;
+    font-size: 10px;
+    color: #B1B1B1;
+    padding-left: 5%    
+}
+
+/* ---------------------------------------------------------------------------- */
+/* 5. CSS for register and log-in forms*/
+.forms {    
+    margin: 0 10% 0 10%;
+    font-size: 14px;    
+}
+
+.registration {    
+    float: left;  
+    padding: 25px 0px 50px 0px;
+    margin-left: 10% 
+}
+
+.login {    
+    float: right;    
+    padding: 25px 0px 10px 50px;
+    margin-right: 20%; 
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email] {
+    width: 100%;
+    margin: 2px 0px 5px 0px;
+}
+
+/* remove spinner from input fields of the number type */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {    
+    -webkit-appearance: none;
+    margin: 0; 
+}
+/* firefox fix */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* 6. CSS for Pizzas catalogue styles */
+div.pizza {
+    border: 1px solid #B1B1B1;
+}
+
+div.pizza:hover {
+    border: 1px solid #797979;
+}
+
+div.pizza img {
+    height: 100%;
+    width: 100%;
+}
+
+.pizzaname {
+    font-size: 14px;
+    padding: 5px
+}
+
+.pizzainf {
+    font-size: 13px;
+    padding: 0px 0px 5px 8px;
+    color: #494949
+}
+
+.pizza {
+    float: left;
+    width: 20%;
+    margin: 5px;
+}
+
+.crust {
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+select {
+    float:left;
+}
+    /* Fix to make checkbox text allign correctly */
+input[type=checkbox] {
+    position: relative;
+    vertical-align: middle;
+    bottom: 1px;    
+} /* (Käpp, 2013) */
+
+.basket {
+    background-color:#E7EB22;
+    margin: 5px;
+}
+
+label {
+    font-size: 8px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* miscellaneous CSS classes used throughout the page */
+.italics {
+    font-style: italic;
+}
+
+.note {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+/* clear floats with <div class="floatclear"> */
+.floatclear {
+    clear: both;
+}
