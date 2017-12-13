@@ -5,10 +5,10 @@ Expanding on the previous repository, all the files are converted into .php file
 ### To run
 A server and databse are required to run the site.  
 Databse details in connect.php:  
-'''
+```
 server = 'localhost'     
 username = 'root'  
 password = ''  
 database = '40321603'  
-'''
+```
 Built using [LAMP](http://www.ampps.com/)
